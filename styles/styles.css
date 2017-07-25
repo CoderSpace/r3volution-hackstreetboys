@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+
+html {
+    background:url("../images/whiter.jpeg" )center center fixed;
+    background-repeat:no-repeat;
+    background-size:cover; 
+    width:100% ;
+    height:100%;
+}
+
+
+nav {
+     list-style-type: none;
+     padding: 1%;
+     text-align:center;
+     display: block;
+     padding-top: 20px;
+     margin:0%;
+     position:fixed;
+     width:100%;
+     z-index:1;
+     background-color:hsla(200,0%,0%,.7);
+    
+;}
+     
+nav a.active{
+  color:#03383C;
+}  
+ 
+
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 2%;
+  font-family: 'Yantramanav', sans-serif;
+
+
+}
+
+ h1 {
+ 
+    font-family: 'Abel', sans-serif;
+    text-align:center; 
+    font-size: 3em;
+    color:;
+}
+    
+
+  
+li {
+  text-align:center;
+  list-style-type: none;
+  color:white;
+  font-size:2em;
+}
+
+.nav-toggle{
+  display:none;
+  background-color:black;
+  color:grey;
+  border-style:solid;
+  border-color:grey;
+  border-radius:.4em
+}
+
+/* 5. style nav-item in desktop view*/
+
+.nav-item{
+  display:inline-block;
+  /*margin-right:5px;*/
+  padding-left: 3%;
+  padding-right: 3%;
+  white-space: nowrap;
+}
+
+/* 6. Add media query to trigger mobile styles*/
+
+@media (max-width: 800px) {
+  .nav-toggle {
+    display:block; /* display menu button*/
+  }
+  
+  .nav-item{
+    display:block; /*6b. display menu items in a column */
+    
+  }
+  
+    .mobile-nav-hidden{
+    display:none; /* 6c. hide nav items (add utility class to <ul>) */
+  }
+  
+  
+}
+
+
+body {
+  width:100%;
+  height:100%;
+  padding-bottom:23em;
+  margin:0%; 
+  clear:both;
+  position: relative;
+  display: table;
+  content: "";
+}
+
+.home {
+  padding-top:10em;
+}
+
+.resume {
+     padding-top:9em;
+}
+
+
+.headshots {
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid #B9BDC9;
+  border-radius: 1%;
+  width: 85%;
+  margin: auto;
+  /*padding: 1em;*/
+}
+
+
+.headshot {
+  width: 40%;
+  border: solid;
+}
+
+
+
+p {
+  font-size:2em;
+  text-align:center;
+  color:white;
+  font-family: 'Yantramanav', sans-serif;
+  width: 60%;
+  margin: auto;
+
+  
+}
+
+h2 {
+    font-size:2em;
+    text-align:center;
+    color:#03383c;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight:thick;
+
+}
+
+
+nav a:visited {
+    color:white;
+}
+
+main {
+    padding:10%;
+}
+
+
+footer {
+  display:block;
+  width:100%;
+  clear:both;
+  border-top: solid 4px black;
+  position:absolute;
+  margin:0%; 
+  background-color:hsla(200,0%,0%,.7);
+  bottom:0;
+  color:white;
+
+}
+
+.teamphoto {
+  display:flex;
+  justify-content:center;
+  margin: auto;
+  /*border: solid;*/
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+  /*border:solid;*/
+  /*box-sizing: border-box;*/
+   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 82%;
+  width: 60%;
+  opacity: 0;
+  transition: .5s ease;
+  margin: auto;
+  
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color:white;
+  font-size: 3em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin:auto;
+}
+
+
+
+
+
+
+.foot {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    margin-left: 10%;
+    list-style: none;
+    /*border: solid;*/
+    padding: 0;
+    width: 50%;
+    margin-left: 25%;
+    flex-wrap: wrap;
+    font-weight:thick;
+}
+
+.social {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    border-color: white;
+    /*background-color: green;*/
+    background-size: 100%;
+    text-align: center;
+    overflow: hidden; 
+    text-decoration: none;
+    
+}
+.contact {
+  text-align:center;
+  padding-top: 2em;
+  display: inline-block;
+  margin: auto;
+  width:100%;
+  height:100%;
+  
+}
+
+
+.teaming {
+    display: flex;
+    width: 90%;
+    /* display: inline-block; */
+    /* width: 100%; */
+    /*border: solid;*/
+    /*box-sizing: border-box;*/
+     margin: auto; 
+    justify-content: center;
+}
+
+
+span {
+    color: white;
+    text-decoration: none;
+    font-size: .5em;
+}
+
+
+.social-text{
+    transform: translateY(-100%);
+    display: block;
+}
+
+.social:hover .social-text{
+    transform: translateY(25%);
+    transition: transform 200ms ease-in;
+}
+
+
+.twitter{ 
+    background-image: url("../images/1.png");
+}
+
+.twitter:hover {
+    background-image: url("../images/twitter.png");
+}
+
+
+.facebook{ 
+    background-image: url("../images/2.png");
+}
+
+.facebook:hover {
+    background-image: url("../images/facebook.png");
+}
+
+.information{
+  color:#5e5e5e;
+  text-decoration:none;
+}
