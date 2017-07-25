@@ -70,7 +70,7 @@ li {
 .nav-item{
   display:inline-block;
   /*margin-right:5px;*/
-  padding-left: 3%;
+  padding-left: 3.5%;
   padding-right: 3%;
   white-space: nowrap;
 }
